@@ -15,6 +15,20 @@ Rotten Potatoes is a lightweight, full-stack movie review application built with
 
 ---
 
+## ⚙️ Configuration
+
+To run the application, you need access to a MongoDB instance. Configure the following environment variables to connect to the database:
+
+- `MONGODB_DB` → Name of the MongoDB database
+- `MONGODB_HOST` → MongoDB host address
+- `MONGODB_PORT` → Port used to access MongoDB
+- `MONGODB_USERNAME` → MongoDB username
+- `MONGODB_PASSWORD` → MongoDB password
+
+You can set these variables in your shell or use a `.env` file with a tool like `python-dotenv`.
+
+---
+
 ## 🧪 Technologies to Integrate (CI/CD Pipeline)
 
 This project will be extended with a complete DevOps pipeline including:
@@ -58,6 +72,13 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r src/requirements.txt
+
+# Set environment variables (example)
+export MONGODB_DB=rottenpotatoes
+export MONGODB_HOST=localhost
+export MONGODB_PORT=27017
+export MONGODB_USERNAME=admin
+export MONGODB_PASSWORD=secret
 
 # Run the app
 python src/app.py
