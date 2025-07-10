@@ -1,3 +1,23 @@
+# Terraform
+*.tfstate
+*.tfstate.backup
+crash.log
+*.tfplan
+*.tfvars
+.terraform/
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.DS_Store
+*.log
+*~
+.vscode/
+.idea/
+*.pem
+*.key
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
