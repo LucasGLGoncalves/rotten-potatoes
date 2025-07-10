@@ -19,3 +19,11 @@ resource "aws_instance" "db" {
   security_groups = [aws_security_group.db_sg.id]
   tags            = { Name = "db-server" }
 }
+
+output "web_ip" {
+  value = aws_instance.app.public_ip
+}
+
+output "db_ip" {
+  value = aws_instance.db.private_ip
+}
